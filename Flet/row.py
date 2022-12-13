@@ -9,6 +9,8 @@ def main(page: ft.Page):
 
     def button_clicked(e):
         page.add(ft.Text(name.value))
+        name.value = ""
+        page.update()
 
     page.add(
     ft.Row(controls=[
